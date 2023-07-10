@@ -1,0 +1,301 @@
+.fundo-azul {
+  background-color: #0093E9;
+}
+
+.fundo-laranja {
+  background-color:  #fdbb2d;
+}
+
+.fundo-laranja-escuro {
+  background-color: orangered;
+}
+
+.fundo-azul-escuro {
+  background-color: #0062ff;
+}
+
+.texto-branco {
+  color: aliceblue;
+}
+
+
+body {
+  background-color: #0093E9;
+
+}
+
+.titulo {
+  color: aliceblue;
+  padding: 10PX;
+  font-size: 50px;
+}
+
+.main-cl {
+  margin-top: 80px;
+}
+
+.livros {
+  height: 256px;
+  width: 180px;
+  /* padding-left: 10px; */
+  margin: 5px;
+}
+
+.botão-vermais {
+  overflow: hidden;
+}
+
+.Categoria-Academicos {
+  overflow: hidden;
+}
+
+
+
+.footer {
+  text-align: left;
+  /* height: 300px; */
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: block;
+  }
+}
+
+
+.creditos {
+  text-align: center;
+  height: 200px;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .creditos {
+    display: block;
+  }
+}
+
+
+.footer-small {
+  text-align: left;  
+  display: none;  
+}
+
+@media screen and (max-width: 768px) {
+  .footer-small {
+    display: block;
+    height: 450px;
+  }
+}
+
+
+.creditos-small {
+  text-align: center;
+  height: 100px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .creditos-small {
+    display: block;
+  }
+}
+
+
+
+.img-footer-small{
+  height: 100px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .img-footer-small {
+    display: block;
+  }
+}
+
+
+
+
+.texto-creditos {
+  color: white;
+}
+
+.aviso-cookies {
+  position: fixed;
+  margin-top: 500px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.589);
+  width: 100%;
+
+}
+
+@media screen and (max-width: 768px) {
+  .aviso-cookies {
+    margin-top: 200px;
+    height: 300px;
+  }
+}
+
+
+
+.texto-cookies {
+  color: white;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.link-politica {
+  color: yellow;
+}
+
+.botao-fechar-cookies {
+  margin-left: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.img-termos {
+  margin-bottom: 20px;
+  width: 80%;
+  border-radius: 50px
+}
+
+.accordion-button {
+  height: 200px;
+}
+
+.seta-sobe {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(7, 155, 234, 0.7);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 75px;
+  color: #fff;
+  display: none;
+
+}
+
+.seta-sobe:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tamanho-input {
+  width: 80%;
+}
+
+.tamanho-card{
+  width: 50%;
+}
+
+
+
+
+#imagem-carousel {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Paginação */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.container .title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.container p {
+  font-size: 19px;
+}
+
+.pagination {
+  margin: 25px 0 15px 0;
+}
+
+.pagination,
+.pagination li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pagination li {
+  background: #f23b26;
+  list-style: none;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #fdfdfd;
+  height: 50px;
+  width: 35px;
+  font-size: 18px;
+  padding-top: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-right-width: 0px;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.35);
+}
+
+.pagination li:last-child a {
+  border-right-width: 1px;
+}
+
+.pagination li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(0, 0, 0, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagination li a:focus,
+.pagination li a:active {
+  padding-top: 4px;
+  border-left-width: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.pagination li.icon a {
+  min-width: 120px;
+}
+
+.pagination li:first-child span {
+  padding-right: 8px;
+}
+
+.pagination li:last-child span {
+  padding-left: 8px;
+}
