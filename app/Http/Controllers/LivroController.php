@@ -50,7 +50,7 @@ class LivroController extends Controller
 
         $romances = livro::where('CategoriaLivro', '2')->get();
 
-        $suspDrama = livro::where('CategoriaLivro', '3')->get();
+        $suspDramas = livro::where('CategoriaLivro', '3')->get();
 
         $infantis = livro::where('CategoriaLivro', '4')->get();
        
@@ -61,7 +61,7 @@ class LivroController extends Controller
         $dados = [
             'academicos' => $academicos,
             'romances' => $romances,
-            'suspDrama' => $suspDrama,
+            'suspDramas' => $suspDramas,
             'infantis' => $infantis
 
         ];
