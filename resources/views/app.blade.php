@@ -118,31 +118,19 @@
       <h2 class="titulo">Acadêmicos:</h2>
       <a href="{{route('academicos')}}" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
-        <img class="livros me-3" src="{{url('/')}}/imagens/imagens-livros/1984.jpg" alt="">
-        <img class="livros me-3" src="{{url('/')}}/imagens/imagens-livros/51nceVwrh7L.jpg" alt="">
-        <img class="livros me-3" src="{{url('/')}}/imagens/imagens-livros/formacao-classe-operaria.jpg" alt="">
-        <img class="livros me-3" src="{{url('/')}}/imagens/imagens-livros/kant.jpg" alt="">
-        <img class="livros me-3" src="{{url('/')}}/imagens/imagens-livros/o-principe-nicolau-maquiavel-1063161.jpg" alt="">
-        <img class="livros me-3" src="{{url('/')}}/imagens/imagens-livros/platao.jpg" alt="">
-        <img class="livros me-2" src="{{url('/')}}/imagens/imagens-livros/riquezas-nacoes.jpg" alt="">
-        <img class="livros me-2" src="{{url('/')}}/imagens/imagens-livros/uma-breve-hist-do-tempo.jpg" alt="">
+      @foreach($academicos as $1)
       </div>
+      endforeach
     </section>
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Românces:</h2>
       <a href="{{route('romances')}}" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
-        <img class="livros me-3" src="imagens/imagens-livros/dom-quixote.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/moby-dick.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/frankstein.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/coracao-das-trevas.jfif" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/o-poder-e-a-gloria.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/a-vida-modo-de-usar.jpg" alt="">
-        <img class="livros me-2" src="imagens/imagens-livros/a-pedra-da-lua.jpg" alt="">
-        <img class="livros me-2" src="imagens/imagens-livros/wuthering-heights.jpg" alt="">
+      @foreach($romances as $2)
 
       </div>
+      @endforeach
 
     </section>
 
@@ -150,30 +138,18 @@
       <h2 class="titulo">Suspense/Drama:</h2>
       <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="{{route('suspense-drama')}}" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
-        <img class="livros me-3" src="imagens/imagens-livros/clube-da-luta.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/antes-de-dormir.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/tempo-de-matar.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/o-casal.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/a-paciente-silenciosa.jpg" alt="">
-        <img class="livros me-3" src="imagens/imagens-livros/garota-exemplar.jpg" alt="">
-        <img class="livros me-2" src="imagens/imagens-livros/o-espiao.jpg" alt="">
-        <img class="livros me-2" src="imagens/imagens-livros/e-nao-sobrou-nenhum.jpg" alt="">
+      @foreach($suspDrama as $3)
       </div>
+      @endforeach
     </section>
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Infantis:</h2>
       <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="{{route('infantis')}}" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
-        <img class="livros" src="imagens/imagens-livros/pequeno-principe.jpg" alt="">
-        <img class="livros" src="imagens/imagens-livros/viagem-ao-centro.jpg" alt="">
-        <img class="livros" src="imagens/imagens-livros/alice-pais-maravilhas.jpg" alt="">
-        <img class="livros" src="imagens/imagens-livros/contos-de-grim.jpg" alt="">
-        <img class="livros" src="imagens/imagens-livros/marcelo-marmelo.jpg" alt="">
-        <img class="livros" src="imagens/imagens-livros/patinho-feio.jpg" alt="">
-        <img class="livros" src="imagens/imagens-livros/menino-maluquinho.jpg" alt="">
-        <img class="livros" src="imagens/imagens-livros/pinoquio.jpg" alt="">
+      @foreach($infantis as $4)
       </div>
+      @endforeach
     </section>
   </main>
 

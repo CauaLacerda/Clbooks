@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 
 class LivroController extends Controller
 {
+    //c do crud
     public function criar(Request $request){
         $livro = new livro;
 
@@ -17,6 +18,7 @@ class LivroController extends Controller
         $livro->AutorLivro = $request->AutorLivro;
         $livro->CategoriaLivro = $request->CategoriaLivro;
     
+        //Fazer upload de arquivos
         $randomTxtLivro = Str::random(20);
         $fileLivro= $request->file('ArquivoLivro');
         $filenameLivro= $randomTxtLivro.date('YmdHi').$fileLivro->getClientOriginalName();
@@ -24,7 +26,7 @@ class LivroController extends Controller
         
         $livro->ArquivoLivro = $filenameLivro;
 
-        
+        //Fazer upload de imagem
         $randomTxtImagem = Str::random(20);
         $fileImagem= $request->file('ImagemLivro');
         $filenameImagem= $randomTxtImagem.date('YmdHi').$fileImagem->getClientOriginalName();
@@ -35,6 +37,36 @@ class LivroController extends Controller
         $livro->save();
 
         return redirect('admin');
+
+    }
+
+
+
+     //R do CRUD
+     public function read(){
+        //Carrega as despesas na variável
+        //SELECT WHERE
+        $academicos = livro::where('CategoriaLivro', '1')->get();
+
+        $romances = livro::where('CategoriaLivro', '2')->get();
+
+        $suspDrama = livro::where('CategoriaLivro', '3')->get();
+
+        $infantis = livro::where('CategoriaLivro', '4')->get();
+       
+
+
+        
+        //Carrega a view passando os dados consultados 
+        $dados = [
+            'academicos' => $academicos,
+            'romances' => $romances,
+            'suspDrama' => $suspDrama,
+            'infantis' => $infantis
+
+        ];
+
+        return view('app', $dados);
 
     }
 
