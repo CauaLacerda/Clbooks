@@ -33,7 +33,7 @@
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
                                 <a class="nav-link text-light" href="{{ route('logout') }}" onclick="event.preventDefault();
-                  this.closest('form').submit(); " role="button">
+                                    this.closest('form').submit(); " role="button">
                                     <i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i>
                                 </a>
                             </form>
@@ -96,14 +96,9 @@
             </div>
 
         </div>
-
-
-
-
     </main>
 
     <footer>
-
 
     </footer>
     <!-- Bootstrap JavaScript Libraries -->

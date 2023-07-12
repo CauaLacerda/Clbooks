@@ -112,8 +112,10 @@
       <a href="{{route('academicos')}}" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($academicos as $academico)
-       </div>
-      endforeach
+      
+        @endforeach
+      </div>
+
     </section>
 
     <section class="Categoria-Academicos">
@@ -122,8 +124,9 @@
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($romances as $romance)
 
-       </div>
-      @endforeach
+        @endforeach
+      </div>
+
 
     </section>
 
@@ -132,8 +135,10 @@
       <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="{{route('suspense-drama')}}" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($suspDramas as $suspDrama)
+
+        @endforeach
       </div>
-      @endforeach
+
     </section>
 
     <section class="Categoria-Academicos">
@@ -141,8 +146,11 @@
       <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="{{route('infantis')}}" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($infantis as $ifantil)
+        
+
+        @endforeach
       </div>
-      @endforeach
+
     </section>
   </main>
 

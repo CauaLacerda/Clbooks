@@ -42,10 +42,10 @@ class LivroController extends Controller
 
 
 
+
      //R do CRUD
-     public function read(){
-        //Carrega as despesas na variável
-        //SELECT WHERE
+public function read(){
+
         $academicos = livro::where('CategoriaLivro', '1')->get();
 
         $romances = livro::where('CategoriaLivro', '2')->get();
@@ -53,7 +53,6 @@ class LivroController extends Controller
         $suspDramas = livro::where('CategoriaLivro', '3')->get();
 
         $infantis = livro::where('CategoriaLivro', '4')->get();
-       
 
 
         
@@ -69,5 +68,6 @@ class LivroController extends Controller
         return view('app', $dados);
 
     }
+
 
 }
