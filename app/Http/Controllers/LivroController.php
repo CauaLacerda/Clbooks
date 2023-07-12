@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\livro;
+use App\Models\Livro;
 
 use Illuminate\Support\Str;
 
@@ -12,7 +12,7 @@ class LivroController extends Controller
 {
     //c do crud
     public function criar(Request $request){
-        $livro = new livro;
+        $livro = new Livro;
 
         $livro->NomeLivro = $request->NomeLivro;
         $livro->AutorLivro = $request->AutorLivro;
@@ -46,16 +46,15 @@ class LivroController extends Controller
      //R do CRUD
 public function read(){
 
-        $academicos = livro::where('CategoriaLivro', '1')->get();
+        $academicos = Livro::where('CategoriaLivro', '1')->get();
 
-        $romances = livro::where('CategoriaLivro', '2')->get();
+        $romances = Livro::where('CategoriaLivro', '2')->get();
 
-        $suspDramas = livro::where('CategoriaLivro', '3')->get();
+        $suspDramas = Livro::where('CategoriaLivro', '3')->get();
 
-        $infantis = livro::where('CategoriaLivro', '4')->get();
-
-
+        $infantis = Livro::where('CategoriaLivro', '4')->get();
         
+
         //Carrega a view passando os dados consultados 
         $dados = [
             'academicos' => $academicos,

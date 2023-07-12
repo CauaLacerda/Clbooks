@@ -21,14 +21,14 @@
   <header>
     <nav class="navbar navbar-expand-lg fundo-azul fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('app') }}"><img src="{{url('/')}}/imagens/Logo-projeto.png" width="110" alt="logo empresa" /></a>
+        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{url('/')}}/imagens/Logo-projeto.png" width="110" alt="logo empresa" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item mb-2 me-2">
-              <a class="nav-link active" aria-current="page" href="{{ route('app') }}"><i class="fa-solid fa-house"></i></a>
+              <a class="nav-link active" aria-current="page" href="{{ url('/') }}"><i class="fa-solid fa-house"></i></a>
             </li>
             <li class="nav-item mb-2 me-2">
               <button class="btn btn-primary fundo-azul" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -109,9 +109,10 @@
     <section class="Categoria-Academicos">
 
       <h2 class="titulo">Acadêmicos:</h2>
-      <a href="{{route('academicos')}}" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
+      <a href="#" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($academicos as $academico)
+        <p>{{$academico->NomeLivro}}</p>
       
         @endforeach
       </div>
@@ -120,7 +121,7 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Românces:</h2>
-      <a href="{{route('romances')}}" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
+      <a href="#" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($romances as $romance)
 
@@ -132,7 +133,7 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Suspense/Drama:</h2>
-      <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="{{route('suspense-drama')}}" role="button">Ver mais</a>
+      <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="#" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($suspDramas as $suspDrama)
 
@@ -143,7 +144,7 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Infantis:</h2>
-      <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="{{route('infantis')}}" role="button">Ver mais</a>
+      <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="#" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($infantis as $ifantil)
         
@@ -253,7 +254,7 @@
     <div class="offcanvas-body fundo-azul">
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" />
-        <a name="" id="" class="btn btn fundo-azul-escuro texto-branco" href="{{route('resultado-buscas')}}" role="button">Pesquisar</a>
+        <a name="" id="" class="btn btn fundo-azul-escuro texto-branco" href="#" role="button">Pesquisar</a>
       </form>
     </div>
   </div>

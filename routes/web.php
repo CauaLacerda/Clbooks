@@ -15,33 +15,27 @@ use App\Http\Controllers\LivroController;
 |
 */
 
-Route::get('/', function () {
-    return view('app');
-});
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-Route::get('/academicos', function () {
-    return view('academicos');
-})->name('academicos');
-Route::get('/romances', function () {
-    return view('romances');
-})->name('romances');
-Route::get('/suspense-drama', function () {
-    return view('suspense-drama');
-})->name('suspense-drama');
-Route::get('/infantis', function () {
-    return view('infantis');
-})->name('infantis');
-Route::get('/app', function () {
-    return view('app');
-})->name('app');
+Route::get('/', [LivroController::class, 'read']);
+// Route::get('/dashboard', [LivroController::class, 'read'])->name('dashboard');
+// Route::get('/academicos', [LivroController::class, 'read'])->name('academicos');
+// Route::get('/romances', function () {
+//     return view('romances');
+// })->name('romances');
+// Route::get('/suspense-drama', function () {
+//     return view('suspense-drama');
+// })->name('suspense-drama');
+// Route::get('/infantis', function () {
+//     return view('infantis');
+// })->name('infantis');
+// Route::get('/app', function () {
+//     return view('app');
+// })->name('app');
 Route::get('/termos-condicoes', function () {
     return view('termos-condicoes');
 })->name('termos-condicoes');
-Route::get('/resultado-buscas', function () {
-    return view('resultado-buscas');
-})->name('resultado-buscas');
+// Route::get('/resultado-buscas', function () {
+//     return view('resultado-buscas');
+// })->name('resultado-buscas');
 
 
 Route::middleware([
