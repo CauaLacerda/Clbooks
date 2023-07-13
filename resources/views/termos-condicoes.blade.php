@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fundo-azul">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ route('app') }}"><img src="imagens/Logo-projeto.png" width="110"
+                <a class="navbar-brand" href="#"><img src="imagens/Logo-projeto.png" width="110"
                         alt="logo empresa" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item mb-2 me-2">
-                            <a class="nav-link active" aria-current="page" href="{{ route('app') }}"><i
+                            <a class="nav-link active" aria-current="page" href="#"><i
                                     class="fa-solid fa-house"></i></a>
                         </li>
                         <li class="nav-item mb-2 me-2">

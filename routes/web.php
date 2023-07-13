@@ -33,6 +33,7 @@ Route::get('/', [LivroController::class, 'read']);
 Route::get('/termos-condicoes', function () {
     return view('termos-condicoes');
 })->name('termos-condicoes');
+
 // Route::get('/resultado-buscas', function () {
 //     return view('resultado-buscas');
 // })->name('resultado-buscas');

@@ -38,9 +38,6 @@
             <li class="nav-item mb-2 me-2">
               <a href="{{route('login')}}" class="btn btn-primary fundo-azul">LOGIN</a>
             </li>
-            <li class="nav-item mb-2 me-2">
-              <a href="{{route('register')}}" class="btn btn-primary fundo-azul">CADASTRE-SE</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -66,54 +63,18 @@
 
 
   <main class="main-cl pt-3">
-    <!-- banner superior - carousel  -->
-    <div id="imagem-carousel" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#imagem-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-        <li data-bs-target="#imagem-carousel" data-bs-slide-to="1" aria-label="Second slide"></li>
-        <li data-bs-target="#imagem-carousel" data-bs-slide-to="2" aria-label="Third slide"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <img src="{{url('/')}}/imagens/imagem1-carousel-projeto.jpg" class="w-100 d-block" alt="First slide" />
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{url('/')}}/imagens/imagem2-carousel-projeto.jpg" class="w-100 d-block" alt="Second slide" />
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img src="{{url('/')}}/imagens/imagem3-carousel-projeto.jpg" class="w-100 d-block" alt="Third slide" />
-          <div class="carousel-caption d-none d-md-block">
-            <a name="" id="" class="btn fundo-laranja m-4"" href=" {{ route('register') }}" role="button">CADASTRE-SE</a>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#imagem-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#imagem-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
-    </div>
-
-    <!-- Final banner topo -->
-
-
+    
     <section class="Categoria-Academicos">
 
       <h2 class="titulo">Acadêmicos:</h2>
-      <a href="#" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($academicos as $academico)
-        <p>{{$academico->NomeLivro}}</p>
-      
+        <!-- <p>{{$academico->NomeLivro}}</p> -->
+        <div class="">
+          <a href="/public/uploads/{{$academico->ArquivoLivro}}" target="_blank">
+            <img class="livros me-3" src="/public/uploads/{{$academico->ImagemLivro}}" alt="">
+          </a>
+        </div>
         @endforeach
       </div>
 
@@ -121,11 +82,11 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Românces:</h2>
-      <a href="#" class="btn btn-light fundo-azul ms-2 mb-2" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($romances as $romance)
 
         @endforeach
+        
       </div>
 
 
@@ -133,7 +94,6 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Suspense/Drama:</h2>
-      <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="#" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($suspDramas as $suspDrama)
 
@@ -144,10 +104,9 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Infantis:</h2>
-      <a name="" id="" class="btn btn-light fundo-azul ms-2 mb-2" href="#" role="button">Ver mais</a>
       <div class="d-md-flex justify-content-between align-items-center">
         @foreach($infantis as $ifantil)
-        
+
 
         @endforeach
       </div>
