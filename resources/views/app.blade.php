@@ -113,9 +113,13 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Infantis:</h2>
-      <div class="d-md-flex justify-content-between align-items-center">
-        @foreach($infantis as $ifantil)
-
+      <div class="d-md-flex align-items-center">
+        @foreach($infantis as $infantil)
+        <div class="">
+          <a href="/public/uploads/{{$infantil->ArquivoLivro}}" target="_blank">
+            <img class="livros me-3" src="/public/uploads/{{$infantil->ImagemLivro}}" alt="">
+          </a>
+        </div>
 
         @endforeach
       </div>

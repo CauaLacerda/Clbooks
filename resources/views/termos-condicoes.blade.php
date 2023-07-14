@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fundo-azul">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="imagens/Logo-projeto.png" width="110"
+                <a class="navbar-brand" href="{{ route('app') }}"><img src="imagens/Logo-projeto.png" width="110"
                         alt="logo empresa" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,14 +42,6 @@
                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                                 <img src="imagens/logo lupa.png" width="20" alt="" />
                             </button>
-                        </li>
-                        <li class="nav-item mb-2 me-2">
-                            <button type="button" class="btn btn-primary fundo-azul" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">LOGIN</button>
-                        </li>
-                        <li class="nav-item mb-2 me-2">
-                            <button type="button" class="btn btn-primary fundo-azul" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop2">CADASTRE-SE</button>
                         </li>
                     </ul>
                 </div>
