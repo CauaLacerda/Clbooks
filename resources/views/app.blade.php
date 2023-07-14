@@ -63,7 +63,7 @@
 
 
   <main class="main-cl pt-3">
-    
+
     <section class="Categoria-Academicos">
 
       <h2 class="titulo">Acadêmicos:</h2>
@@ -82,11 +82,16 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Românces:</h2>
-      <div class="d-md-flex justify-content-between align-items-center">
+      <div class="d-md-flex align-items-center">
         @foreach($romances as $romance)
-
+        <!-- <p>{{$academico->NomeLivro}}</p> -->
+        <div class="">
+          <a href="/public/uploads/{{$romance->ArquivoLivro}}" target="_blank">
+            <img class="livros me-3" src="/public/uploads/{{$romance->ImagemLivro}}" alt="">
+          </a>
+        </div>
         @endforeach
-        
+
       </div>
 
 
@@ -94,9 +99,13 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Suspense/Drama:</h2>
-      <div class="d-md-flex justify-content-between align-items-center">
+      <div class="d-md-flex  align-items-center">
         @foreach($suspDramas as $suspDrama)
-
+        <div class="">
+          <a href="/public/uploads/{{$suspDrama->ArquivoLivro}}" target="_blank">
+            <img class="livros me-3" src="/public/uploads/{{$suspDrama->ImagemLivro}}" alt="">
+          </a>
+        </div>
         @endforeach
       </div>
 
