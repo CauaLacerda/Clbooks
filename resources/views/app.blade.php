@@ -67,7 +67,7 @@
     <section class="Categoria-Academicos">
 
       <h2 class="titulo">Acadêmicos:</h2>
-      <div class="d-md-flex justify-content-between align-items-center">
+      <div class="d-md-flex align-items-center">
         @foreach($academicos as $academico)
         <!-- <p>{{$academico->NomeLivro}}</p> -->
         <div class="">
