@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fundo-azul">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ route('app') }}"><img src="imagens/Logo-projeto.png" width="110"
+                <a class="navbar-brand" href="#"><img src="imagens/Logo-projeto.png" width="110"
                         alt="logo empresa" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
