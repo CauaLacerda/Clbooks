@@ -21,6 +21,36 @@
 
 body {
   background-color: #0093E9;
+  
+
+}
+
+.Categoria-Academicos::-webkit-scrollbar {
+  width: 5px;
+  height: 12px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+.Categoria-Academicos::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+.Categoria-Academicos::-webkit-scrollbar-thumb {
+  background-color: rgb(249, 193, 22);
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 8px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(249, 193, 22);
 
 }
 
@@ -40,12 +70,12 @@ body {
   margin: 5px;
 }
 
-.botão-vermais {
-  overflow: hidden;
-}
+
+
 
 .Categoria-Academicos {
-  overflow: hidden;
+  overflow: auto;
+  
 }
 
 .display{

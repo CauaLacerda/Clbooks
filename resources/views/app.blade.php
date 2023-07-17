@@ -67,7 +67,7 @@
     <section class="Categoria-Academicos">
 
       <h2 class="titulo">Acadêmicos:</h2>
-      <div class="d-md-flex align-items-center">
+      <div class="d-sm-flex align-items-center">
         @foreach($academicos as $academico)
         <!-- <p>{{$academico->NomeLivro}}</p> -->
         <div class="display">
@@ -82,7 +82,7 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Românces:</h2>
-      <div class="d-md-flex align-items-center">
+      <div class="d-sm-flex align-items-center">
         @foreach($romances as $romance)
         <!-- <p>{{$academico->NomeLivro}}</p> -->
         <div class="display">
@@ -99,7 +99,7 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Suspense/Drama:</h2>
-      <div class="d-md-flex  align-items-center">
+      <div class="d-sm-flex  align-items-center">
         @foreach($suspDramas as $suspDrama)
         <div class="display">
           <a href="/public/uploads/{{$suspDrama->ArquivoLivro}}" target="_blank">
@@ -113,9 +113,9 @@
 
     <section class="Categoria-Academicos">
       <h2 class="titulo">Infantis:</h2>
-      <div class="d-xl-flex align-items-center">
+      <div class="d-sm-flex align-items-center">
         @foreach($infantis as $infantil)
-        <div class="display">
+        <div class="">
           <a href="/public/uploads/{{$infantil->ArquivoLivro}}" target="_blank">
             <img class="livros me-3" src="/public/uploads/{{$infantil->ImagemLivro}}" alt="">
           </a>
