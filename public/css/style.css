@@ -48,7 +48,9 @@ body {
   overflow: hidden;
 }
 
-
+.display{
+  display: inline-block;
+}
 
 .footer {
   text-align: left;
