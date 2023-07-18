@@ -36,7 +36,7 @@ class LivroController extends Controller
         //Grava na tabela do BD
         $livro->save();
 
-        return redirect('admin');
+        return redirect('dashboard');
 
     }
 

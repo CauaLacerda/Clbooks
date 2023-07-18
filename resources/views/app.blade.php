@@ -30,11 +30,11 @@
             <li class="nav-item mb-2 me-2">
               <a class="nav-link active" aria-current="page" href="{{ url('/') }}"><i class="fa-solid fa-house"></i></a>
             </li>
+
             <li class="nav-item mb-2 me-2">
-              <button class="btn btn-primary fundo-azul" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                <img src="{{url('/')}}/imagens/logo lupa.png" width="20" alt="" />
-              </button>
+              <a href="{{route('dashboard')}}" class="btn btn-primary fundo-azul">ADM</a>
             </li>
+  
             <li class="nav-item mb-2 me-2">
               <a href="{{route('login')}}" class="btn btn-primary fundo-azul">LOGIN</a>
             </li>

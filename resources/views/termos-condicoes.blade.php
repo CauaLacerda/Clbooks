@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg fundo-azul">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="imagens/Logo-projeto.png" width="110"
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="imagens/Logo-projeto.png" width="110"
                         alt="logo empresa" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,14 +34,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item mb-2 me-2">
-                            <a class="nav-link active" aria-current="page" href="#"><i
+                            <a class="nav-link active" aria-current="page" href="{{ url('/') }}"><i
                                     class="fa-solid fa-house"></i></a>
-                        </li>
-                        <li class="nav-item mb-2 me-2">
-                            <button class="btn btn-primary fundo-azul" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <img src="imagens/logo lupa.png" width="20" alt="" />
-                            </button>
                         </li>
                     </ul>
                 </div>
@@ -264,101 +258,6 @@
 
     </footer>
 
-    <!-- Início Modal com cadastro -->
-    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                        Criar Conta
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="" class="form-label">Email:</label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="" />
-
-                    </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">Senha:</label>
-
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="" />
-
-                    </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">Senha(confirmação):</label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="" />
-
-                    </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">Data de Nascimento:</label>
-                        <input type="date" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="" />
-
-
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Fechar
-                    </button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                </div>
-                <div class="input-group mb-3 m-2">
-                    <div class="input-group-text">
-                        <input class="form-check-input mt-0" type="checkbox" value=""
-                            aria-label="Checkbox for following text input">
-                        <label class="m-2">Concordo com os <a href="termos-condicoes.html">termos e
-                                condições</a></label>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- Início Modal com login -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                        Iniciar Sessão
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="" class="form-label">Email:</label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="" class="form-label">Senha:</label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                            placeholder="" />
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                        Fechar
-                    </button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                </div>
-                <a class="m-2" href="forgot-pass.html">esqueceu a senha?</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Final modal com login -->
 
     <!-- Seta pra subir a página -->
     <a href="#" class="seta-sobe">
